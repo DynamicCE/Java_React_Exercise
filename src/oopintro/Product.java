@@ -1,5 +1,5 @@
 package oopintro;
-// DONT REPEAT YOURSELF, USE METHODS
+
 public
 class Product {
     // ürünün adı , resmi , fiyatı vs ayrı veriler:

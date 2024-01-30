@@ -11,17 +11,17 @@ class Main {
          * gerçekçi değil, objeler sadece isimleriyle var olmazlar.
          */
 
-        // benim üç tane verim var(bilgisayar) , o verilerin türü product
+        // benim üç tane verim var(bilgisayar) , o verilerin türü Product
         // Product[] products = getProducts(); gerçek hayat kullanımı bu tarz, veritabanından dataları getirecek method
 
 // Javada classlar referans tiptir.
         Product product1 = new Product ( ); // referans oluşturma , instance
+        product1.name = "Lenovo v14";
         product1.id = 1;
         product1.unitPrice = 14000;
-        product1.name = "Lenovo v14";
         product1.detail = "16 gb ram";
 
-        Product product2 = new Product ("Lenovo v15",2 ,18000 , 32 gb ram); // newlediğim anda Product nesnesinin fieldlarına sahip yeni bi referans oluşur.(girilene kadar null fieldlar)
+        Product product2 = new Product ("Lenovo v15",2 ,18000 , "32 gb ram"); // newlediğim anda Product nesnesinin fieldlarına sahip yeni bi referans oluşur.(girilene kadar null fieldlar)
        /* product2.id = 2;
         product2.unitPrice = 18000;
         product2.name = "Lenovo v15";
@@ -52,6 +52,11 @@ class Main {
         Category category2 = new Category ();
         category2.id=2;
         category2.name="Ev-Bahçe";
+
+
+        // Bir Methodu Kullanma Yöntemi , nesneymiş gibi newlememiz lazım kullanacağımız yerde
+        ProductManager productManager = new ProductManager ();
+        productManager.addToCart (product3); // productManager'a product3 ' ün bellek adresini göndermiş olduk
 
     }
 

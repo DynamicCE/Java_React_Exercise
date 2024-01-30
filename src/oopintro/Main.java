@@ -21,17 +21,16 @@ class Main {
         product1.name = "Lenovo v14";
         product1.detail = "16 gb ram";
 
-        Product product2 = new Product ( ); // newlediğim anda Product nesnesinin fieldlarına sahip yeni bi referans oluşur.(girilene kadar null fieldlar)
-        product2.id = 2;
+        Product product2 = new Product ("Lenovo v15",2 ,18000 , 32 gb ram); // newlediğim anda Product nesnesinin fieldlarına sahip yeni bi referans oluşur.(girilene kadar null fieldlar)
+       /* product2.id = 2;
         product2.unitPrice = 18000;
         product2.name = "Lenovo v15";
         product2.detail = "32 gb ram";
+        bu şekilde kullanabilirdik ama fields göndersek daha mantıklı
+        */
 
-        Product product3 = new Product ( );
-        product3.id = 3;
-        product3.unitPrice = 10000;
-        product3.name = "Hp 5";
-        product3.detail = "8 gb ram";
+        Product product3 = new Product ("Hp 5" , 3 , 10000 , "8 gb ram" );
+        // şakkadanak product3 oluşturduk ve name, id,price vs özellikleri oldu.
 
 
         Product[] products = {product1, product2, product3}; // nesne dizisi, yukarıda tanımladığım nesneleri içine attım

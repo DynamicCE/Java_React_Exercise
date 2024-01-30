@@ -1,5 +1,5 @@
 package oopintro;
-
+// DONT REPEAT YOURSELF, USE METHODS
 public
 class Product {
     // ürünün adı , resmi , fiyatı vs ayrı veriler:
@@ -11,6 +11,7 @@ class Product {
 
 // şimdi constructor yazalım ki direkt main methodda Product nesnesi oluştururken field'ları props olarak verebilelim
     public Product(String name,int id,double unitPrice, String detail) { // bu satır imza oluyor, bu imzaya göre nesne oluşturursak bu constructor çalışır
+        this(); //bir başka constructor'u da bu şekilde constructor içinde çalıştırabiliyoruz ama clean code mu bilemedim.
         this.name = name;
         this.id = id;
         this.unitPrice = unitPrice;

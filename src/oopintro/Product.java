@@ -3,24 +3,83 @@ package oopintro;
 public
 class Product {
     // ürünün adı , resmi , fiyatı vs ayrı veriler:
-    String name;
-    double unitPrice;
-    String detail;
-    int id;
 
+    // encapsulation
+    private int id;
+    private String name;
+    private double unitPrice;
+    private String detail;
+    private double discount;
 
-// şimdi constructor yazalım ki direkt main methodda Product nesnesi oluştururken field'ları props olarak verebilelim
-    public Product(String name,int id,double unitPrice, String detail) { // bu satır imza oluyor, bu imzaya göre nesne oluşturursak bu constructor çalışır
-        this(); //bir başka constructor'u da bu şekilde constructor içinde çalıştırabiliyoruz ama clean code mu bilemedim.
-        this.name = name;
-        this.id = id;
-        this.unitPrice = unitPrice;
-        this.detail = detail;
+    public
+    Product () {
 
     }
 
-    public Product(){ // Bu imzaya göre nesne oluşturursak bu constructor çalışır.
-        System.out.println ("Boş nesne, fields girilmemiş.");
+    // sağ tık yapıp generate-> constructor dediğim zaman bu yapıcı metodu tıklanan yerde hızlıca oluşturuyor
+    public
+    Product ( int id, String name, double unitPrice, String detail, double discount, double unitPriceAfterDiscount ) {
+        this.setId ( id );
+        this.setName ( name );
+        this.setUnitPrice ( unitPrice );
+        this.setDetail ( detail );
+        this.setDiscount ( discount );
+
+    }
+
+    public
+    int getId () {
+        return id;
+    }
+
+    public
+    void setId ( int id ) {
+        this.id = id;
+    }
+
+    public
+    String getName () {
+        return name;
+    }
+
+    public
+    void setName ( String name ) {
+        this.name = name;
+    }
+
+    public
+    double getUnitPrice () {
+        return unitPrice;
+    }
+
+    public
+    void setUnitPrice ( double unitPrice ) {
+        this.unitPrice = unitPrice;
+    }
+
+    public
+    String getDetail () {
+        return detail;
+    }
+
+    public
+    void setDetail ( String detail ) {
+        this.detail = detail;
+    }
+
+    public
+    double getDiscount () {
+        return discount;
+    }
+
+    public
+    void setDiscount ( double discount ) {
+        this.discount = discount;
+    }
+
+    public
+    double getUnitPriceAfterDiscount () {
+        return unitPrice - unitPrice * discount / 100;
     }
 }
 // Product türünden nesneyi oluştururken olmasını istediğim kod varsa constructor bloğuna yazarım

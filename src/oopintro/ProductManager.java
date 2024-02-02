@@ -4,6 +4,6 @@ package oopintro;
 // iş yapan sınıf
 public class ProductManager {
     public void addToCart(Product product){
-        System.out.println ("Sepete ekleme kodu çağırıldı, " + product.name +" sepete eklendi.");
+        System.out.println ("Sepete ekleme kodu çağırıldı, " + product.getName ( ) +" sepete eklendi.");
     }
 }

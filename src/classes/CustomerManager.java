@@ -1,7 +1,7 @@
 package classes;
 
 public
-class CustomerManager { // müşteri ile ilgili neler yapacaksak bu classın içine koyuyoruz
+class CustomerManager { // müşteriyi yönetme ile ilgili neler yapacaksak bu classın içine koyuyoruz
     public void Add(){
         System.out.println ("Müşteri eklendi" );
     }

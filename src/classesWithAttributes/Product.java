@@ -1,6 +1,6 @@
 package classesWithAttributes;
-// Product ürünle alakalı özellikler, adı ,sanı, stoğu, rengi , ağırlık vs
-// field veya attribute ,aynı şey
+// Productla, ürünle alakalı özellikler, adı ,sanı, stoğu, rengi , ağırlık vs
+// field = attribute
 
 public
 class Product {

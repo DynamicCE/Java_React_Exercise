@@ -5,7 +5,8 @@ class DortIslem {
     public int topla(int sayi1,int sayi2){
         return sayi1+sayi2;
     }
-    public int topla(int sayi1,int sayi2,int sayi3){ // isimlerinin aynı olmasının önemi yok çünkü imzaları farklı - OVERLOADING
+    // aynı metodu aynı isimle ama farklı değişkenlerle(farklı imzayla) yazmak , farklı kod döndürmek method overloading
+    public int topla(int sayi1,int sayi2,int sayi3){
         return sayi1+sayi2;
     }
 }

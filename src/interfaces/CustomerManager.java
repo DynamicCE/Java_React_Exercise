@@ -21,7 +21,7 @@ class CustomerManager { // CustomerManager loglamaya bağımlı. Bağımlılıkl
 
     public
     void add ( Customer customer ) {
-        System.out.println ( customer.getFirstName ( ) + " eklendi" );
+        System.out.println ( customer.getFirstName( ) + " eklendi" );
 //        DatabaseLogger databaseLogger = new DatabaseLogger ();
 //        databaseLogger.log ( customer.getFirstName () );
 
